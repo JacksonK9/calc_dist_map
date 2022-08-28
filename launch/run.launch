@@ -1,3 +1,4 @@
 <launch>
     <include file="$(find hector_slam_launch)/launch/tutorial.launch" />
+    <node name="calc_dist" pkg="calc_dist_map" type="calc_dist.py" />
 </launch>
