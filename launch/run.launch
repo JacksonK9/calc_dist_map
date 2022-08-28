@@ -1,4 +1,5 @@
 <launch>
     <include file="$(find hector_slam_launch)/launch/tutorial.launch" />
     <node name="calc_dist" pkg="calc_dist_map" type="calc_dist.py" />
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find calc_dist_map)/rviz/hector_mapping.rviz"/>
 </launch>
